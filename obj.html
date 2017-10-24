@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="HTML5 Template" />
+	<title> Parallex demo </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="dd.css" />
+	<link rel="stylesheet" type="text/css" href="flag.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="jquery.dd.min.js" type="text/javascript"></script>
+
+
+	<style>
+		.india_logo {background: url("india.gif") left top no-repeat;width: 20px; height: 15px; display: inline-block;}
+		.afghanistan_logo {background: url("afghanistan.gif") left top no-repeat;width: 20px;height: 15px; display: inline-block;}
+		.aland_logo {background: url("aland.gif") left top no-repeat;width: 20px; height: 15px; display: inline-block;}
+		.ddcommon .ddTitle .ddTitleText img {width: 20px; height: 15px;}
+		.ddcommon .ddChild li img {width: 20px; height: 15px;}
+		#webmenu_msdd {width: 200px !important;}
+		#webmenu_child {top:28px !important;}
+		
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+	<section>
+    <div class="selecters">
+      <!-- <span class=""></span> -->
+      <select name="webmenu" id="webmenu">
+	    <option value="india_logo" data-image="india.gif">india</option>
+	    <option value="afghanistan_logo" data-image="afghanistan.gif">afghanistan</option>
+	    <option value="aland_logo" data-image="aland.gif">aland</option>
+	  </select>
+    </div>
+	</section>
+</div>
+<script>
+	$(document).ready(function(e) {
+		try {
+		$("body select").msDropDown();
+		} catch(e) {
+		alert(e.message);
+		}
+	});
+</script>
+</body>
+</html>
